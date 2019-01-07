@@ -1,0 +1,6 @@
+terraform {
+  backend "gcs" {
+    bucket = "dulcet-bastion-135423-tfstate"
+    credentials = "./creds/serviceaccount.json"
+  }
+}
